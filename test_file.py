@@ -1,6 +1,10 @@
-print("Please input 2 numbers and I will add them.\n")
+print("If this file executes correct, it will create and save a simple text file with some numbers.\n")
 
-x = float(input("Number 1: "))
-y = float(input("Number 2: "))
-z = x + y
-print(f"Their sum is {z}")
+l = [1, 2, 3, 4, 5, 6]
+
+
+with open('test_txt_file.txt', 'w') as f:
+    for nr in l:
+        f.write(str(nr))
+
+print("execution finished")
